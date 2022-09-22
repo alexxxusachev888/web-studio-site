@@ -155,8 +155,15 @@
         <h2 class="team__title">Наша команда</h2>
         <ul class="team__list">
           <li class="team__item without-dot">
-            <img class="team__image" scrset="images/dev1-480-min.jpg 1x, images/dev1-480@2x-min.jpg 2x"
-              src="images/dev1-480-min.jpg" alt="член команди продакт менеджер Ігор Дем'яненко" width="270">
+            <picture>
+              <source srcset="./images/dev1-480-min.jpg 1x, ./images/dev1-480@2x-min.jpg 2x" media="(max-width:767px)"
+                type="image/jpeg" />
+              <source srcset="./images/dev1-768-min.jpg 1x, ./images/dev1-768@2x-min.jpg 2x" media="(max-width:1199px)"
+                type="image/jpeg" />
+              <source srcset="./images/dev1-1200-min.jpg 1x, ./images/dev1-1200@2x-min.jpg 2x"
+                media="(min-width:1200px)" type="image/jpeg" />
+              <img src="./images/dev1-480-min.jpg" alt="член команди маркетолог Ігор Дем'яненко" width="450" />
+            </picture>
             <div class="team__inner">
               <h3 class="team__subtitle">Ігор Дем'яненко</h3>
               <p class="team__descr">Product Designer</p>
@@ -193,8 +200,15 @@
             </div>
           </li>
           <li class="team__item without-dot">
-            <img class="team__image" scrset="images/dev2-480-min.jpg 1x, images/dev2-480@2x-min.jpg 2x"
-              src="images/dev2-480-min.jpg" alt="член команди фронтенд розробник Ольга Рєпіна" width="270">
+            <picture>
+              <source srcset="./images/dev2-480-min.jpg 1x, ./images/dev2-480@2x-min.jpg 2x" media="(max-width:767px)"
+                type="image/jpeg" />
+              <source srcset="./images/dev2-768-min.jpg 1x, ./images/dev2-768@2x-min.jpg 2x" media="(max-width:1199px)"
+                type="image/jpeg" />
+              <source srcset="./images/dev2-1200-min.jpg 1x, ./images/dev2-1200@2x-min.jpg 2x"
+                media="(min-width:1200px)" type="image/jpeg" />
+              <img src="./images/dev2-480-min.jpg" alt="член команди маркетолог Ольга Рєпіна" width="450" />
+            </picture>
             <div class="team__inner">
               <h3 class="team__subtitle">Ольга Рєпіна</h3>
               <p class="team__descr">Frontend Developer</p>
@@ -231,8 +245,15 @@
             </div>
           </li>
           <li class="team__item without-dot">
-            <img class="team__image" scrset="images/dev3-480-min.jpg 1x, images/dev3-480@2x-min.jpg 2x"
-              src="images/dev3-480-min.jpg" alt="член команди маркетолог Микола Тарасов" width="270">
+            <picture>
+              <source srcset="./images/dev3-480-min.jpg 1x, ./images/dev3-480@2x-min.jpg 2x" media="(max-width:767px)"
+                type="image/jpeg" />
+              <source srcset="./images/dev3-768-min.jpg 1x, ./images/dev3-768@2x-min.jpg 2x" media="(max-width:1199px)"
+                type="image/jpeg" />
+              <source srcset="./images/dev3-1200-min.jpg 1x, ./images/dev3-1200@2x-min.jpg 2x"
+                media="(min-width:1200px)" type="image/jpeg" />
+              <img src="./images/dev3-480-min.jpg" alt="член команди маркетолог Микола Тарасов" width="450" />
+            </picture>
             <div class="team__inner">
               <h3 class="team__subtitle">Микола Тарасов</h3>
               <p class="team__descr">Marketing</p>
@@ -269,8 +290,15 @@
             </div>
           </li>
           <li class="team__item without-dot">
-            <img class="team__image" scrset="images/dev4-480-min.jpg 1x, images/dev4-480@2x-min.jpg 2x"
-              src="images/dev4-480-min.jpg" alt="член команди юикс дизайнер Михайло Єрмаков" width="270">
+            <picture>
+              <source srcset="./images/dev4-480-min.jpg 1x, ./images/dev4-480@2x-min.jpg 2x" media="(max-width:767px)"
+                type="image/jpeg" />
+              <source srcset="./images/dev4-768-min.jpg 1x, ./images/dev4-768@2x-min.jpg 2x" media="(max-width:1199px)"
+                type="image/jpeg" />
+              <source srcset="./images/dev4-1200-min.jpg 1x, ./images/dev4-1200@2x-min.jpg 2x"
+                media="(min-width:1200px)" type="image/jpeg" />
+              <img src="./images/dev4-480-min.jpg" alt="член команди маркетолог Михайло Єрмаков" width="450" />
+            </picture>
             <div class="team__inner">
               <h3 class="team__subtitle">Михайло Єрмаков</h3>
               <p class="team__descr">UI Designer</p>
@@ -382,28 +410,28 @@
         <ul class="social">
           <li class="social__item">
             <a class="social__link bg-color" href="#">
-              <svg class="social__icon" width="20" height="20">
+              <svg class="social__icon footer__social-icon" width="20" height="20">
                 <use href="./images/icons.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link bg-color" href="#">
-              <svg class="social__icon" width="20" height="20">
+              <svg class="social__icon footer__social-icon" width="20" height="20">
                 <use href="./images/icons.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link bg-color" href="#">
-              <svg class="social__icon" width="20" height="20">
+              <svg class="social__icon footer__social-icon" width="20" height="20">
                 <use href="./images/icons.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link bg-color" href="">
-              <svg class="social__icon" width="20" height="20">
+              <svg class="social__icon footer__social-icon" width="20" height="20">
                 <use href="./images/icons.svg#icon-linkedin"></use>
               </svg>
             </a>

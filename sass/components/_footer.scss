@@ -31,7 +31,6 @@
     @media screen and (min-width: 768px) {
       display: inline-block;
     }
-
   }
 
   &__item:not(:last-child) {
@@ -82,6 +81,14 @@
     color: $footer-link-color;
   }
 
+
+}
+
+
+
+
+
+.footer {
   &__social-call {
     margin-bottom: 20px;
     font-weight: 700;
@@ -124,10 +131,12 @@
     }
   }
 
-  &__social &__icon {
+  &__social-icon {
     fill: $white-color;
   }
+}
 
+.footer {
   &__subscribe {
     display: inline-block;
 
@@ -151,6 +160,7 @@
 
     @media screen and (min-width: 1200px) {
       width: 358px;
+      margin-bottom: 0;
     }
   }
 
