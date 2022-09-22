@@ -4,7 +4,9 @@
   gap: 30px;
 
   &__item {
-    &:hover {
+
+    &:hover,
+    &:focus {
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
     }
@@ -88,9 +90,8 @@
     color: $third-color;
   }
 
-  &__link:hover &__item-overlay {
+  &__link:hover &__item-overlay,
+  &__link:focus &__item-overlay {
     transform: translateY(0);
   }
-
-
 }
