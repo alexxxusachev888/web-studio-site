@@ -28,8 +28,8 @@
 
 .mobile__icon {
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: 40px;
+  right: 25px;
 
   &:hover {
     fill: $second-color;
@@ -38,4 +38,8 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
+}
+
+.mobile__icon-close {
+  z-index: 5;
 }

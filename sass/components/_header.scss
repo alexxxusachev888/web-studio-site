@@ -1,5 +1,5 @@
 .header {
-
+  position: relative;
   border-bottom: 1px solid $header-bottom-border;
 
   @media screen and (max-width: 767px) {
@@ -7,7 +7,6 @@
   }
 
   & .container {
-    position: relative;
     display: flex;
     align-items: center;
   }
@@ -234,16 +233,15 @@
 }
 
 .extra-wrapper {
-  z-index: 999;
   width: 100%;
   height: auto;
+  z-index: 3;
 
   @media screen and (min-width:320px) and (max-width:479px) {
-    width: 320px;
     padding: 28px 20px;
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width:180px)and (max-width: 767px) {
     position: absolute;
     top: -20px;
     left: 0;

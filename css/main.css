@@ -93,6 +93,7 @@ li {
 }
 
 .header {
+  position: relative;
   border-bottom: 1px solid #ececec;
 }
 @media screen and (max-width: 767px) {
@@ -101,7 +102,6 @@ li {
   }
 }
 .header .container {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -360,17 +360,16 @@ li {
 }
 
 .extra-wrapper {
-  z-index: 999;
   width: 100%;
   height: auto;
+  z-index: 3;
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .extra-wrapper {
-    width: 320px;
     padding: 28px 20px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 180px) and (max-width: 767px) {
   .extra-wrapper {
     position: absolute;
     top: -20px;
@@ -1401,8 +1400,8 @@ li {
   height: 100%;
   padding: 77px 24px;
   background-color: rgba(33, 150, 243, 0.9);
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1438,6 +1437,9 @@ li {
 }
 .works__inner {
   padding: 20px 24px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
@@ -1458,6 +1460,16 @@ li {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: #757575;
+}
+.works__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
 }
 .works__link:hover .works__item-overlay, .works__link:focus .works__item-overlay {
   -webkit-transform: translateY(0);
@@ -1489,8 +1501,8 @@ li {
 
 .mobile__icon {
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: 40px;
+  right: 25px;
 }
 .mobile__icon:hover {
   fill: #2196f3;
@@ -1499,4 +1511,8 @@ li {
   .mobile__icon {
     display: none;
   }
+}
+
+.mobile__icon-close {
+  z-index: 5;
 }/*# sourceMappingURL=main.css.map */
